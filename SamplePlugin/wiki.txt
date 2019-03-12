@@ -1,0 +1,38 @@
+${workspace_loc:/SamplePlugin} mvn clean install
+
+https://harvesthq.github.io/chosen/
+
+org.apache.commons.jelly.JellyException: Could not parse Jelly script
+
+[ERROR] io\jenkins\plugins\build\step\BuildStepImpl\global.jelly(org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck)  Time elapsed: 0.031 s  <<< ERROR!
+org.apache.commons.jelly.JellyException: Could not parse Jelly script : file:/D:/Yashwanth/WorkSpace/JENKINS_PLUGIN/SamplePlugin/target/classes/io/jenkins/plugins/build/step/BuildStepImpl/global.jelly
+	at org.apache.commons.jelly.JellyContext.compileScript(JellyContext.java:529)
+	at org.jvnet.hudson.test.JellyTestSuiteBuilder$JellyCheck.runTest(JellyTestSuiteBuilder.java:102)
+	
+	----
+Mar 01, 2019 1:48:06 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Starting the installation of SamplePlugin on behalf of yash
+Mar 01, 2019 1:48:06 PM hudson.model.UpdateCenter$UpdateCenterConfiguration download
+INFO: Downloading SamplePlugin
+Mar 01, 2019 1:48:06 PM hudson.PluginManager dynamicLoad
+INFO: Attempting to dynamic load C:\Users\yashwanth.m\.jenkins\plugins\SamplePlugin.jpi
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Mar 01, 2019 1:48:06 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Mar 01, 2019 1:48:06 PM hudson.PluginManager dynamicLoad
+INFO: Plugin SamplePlugin:1.0 dynamically installed
+Mar 01, 2019 1:48:06 PM hudson.model.UpdateCenter$DownloadJob run
+INFO: Installation successful: SamplePlugin
+
+>> C:\Users\yashwanth.m\.jenkins\plugins\SamplePlugin\WEB-INF\lib\SamplePlugin.jar

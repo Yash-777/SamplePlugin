@@ -1,0 +1,15 @@
+<?jelly escape-by-default='true'?>
+
+<!--
+  This view is used to render the installed plugins page.
+  Demonstration of UI controls available in Jenkins based on Stapler, Jelly, Groovy, etc.
+  
+* Plugin installation:
+Plugins are installed in the Jenkins > Manage Jenkins > Plugin Manager configuration.
+Only three pieces of information are provided for each plugin in this list: Name and
+the URL associated to it come from the plugin's pom.xml file; the Description comes
+either from the same file, or from the `src/main/resources/index.jelly` file, as in this case.
+-->
+<div>
+  TODO: This plugin is a sample to explain how to write a Jenkins plugin.
+</div>

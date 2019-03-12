@@ -1,0 +1,18 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+		xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <!--
+    Creates a text field that shows the value of the "nameConfig" property.
+    When submitted, it will be passed to the corresponding constructor parameter.
+    
+    Jelly form controls - https://wiki.jenkins.io/display/JENKINS/Jelly+form+controls
+  -->
+  <f:entry title="Name" field="nameConfig">
+    <f:textbox />
+  </f:entry>
+</j:jelly>

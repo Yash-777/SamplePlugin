@@ -1,0 +1,33 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+		xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+  https://github.com/jenkinsci/open-stf-plugin/blob/master/src/main/resources/hudson/plugins/openstf/STFBuildWrapper/config.jelly
+  -->
+
+	<!--
+	OptionalBlock : Foldable block expanded when the menu item is checked.
+	https://wiki.jenkins.io/display/JENKINS/Jelly+form+controls
+	-->
+	<f:block>
+		<f:section title="SamplePlugin Options">
+		
+		<!-- Select (drop-down menu) : Use an <f:entry> tag to enclose the normal select tag. -->
+		<f:entry name="goalType" title="Choose Goal Type" field="goalType">
+			<select name="goalType">
+				<option value="buildGoal">Build Goal</option>
+				<option value="findBugsGoal">FindBugs goal</option>
+			</select>
+		</f:entry>
+
+		<!--
+		Select (drop-down menu) with model filled values
+		Basically the same as above. You need to define the following method in the descriptor of your Describable instance
+		-->
+		<f:entry field="goalTypeModel" title="Choose Goal Type form Model">
+			<f:select /> <!-- name="goalTypeModel" -->
+		</f:entry>
+		
+		</f:section>
+	</f:block>
+</j:jelly>
